@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>y산길</title>
+<title>사진 나오기</title>
 <style>
   hr {
     height: 5px;
@@ -12,7 +12,7 @@
 </style>
 <script>
   function show() {
-    document.getElementById("fig").src = "ElvisPresley.png";
+    document.getElementById("fig").src = "file:///E:/20250906_194002%20(1).jpg"; 
   }
   function hide() {
     document.getElementById("fig").src = "";
@@ -22,7 +22,7 @@
 <body>
   <h3 onmouseover="show()" onmouseout="hide()">Lee Jae Yoon</h3>
   <hr>
-  <div><img id="fig" src=""></div>
+  <div><img id="fig" src="" style="max-width:300px;"></div>
   <p>
     I am a Korean student. I was born in June 2005.<br>
     I enjoy playing games and watching movies.<br>
