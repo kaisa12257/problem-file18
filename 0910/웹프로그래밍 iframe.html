@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>웹프로그래밍 참조 사이트</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    gap: 10px;
+  }
+
+  .left-panel {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .title-box {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .links-box {
+    border: 1px solid #000;
+    padding: 10px;
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  .links-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .links-box li {
+    margin-bottom: 5px;
+  }
+
+  .links-box a {
+    text-decoration: none;
+  }
+
+  .iframes-box {
+    flex: 1;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+  <div class="left-panel">
+    <div class="title-box">웹 프로그래밍 참조 사이트</div>
+    <div class="links-box">
+      <ul>
+        <li><a href="sitelist.html" target="displayFrame">사이트 리스트</a></li>
+        <li><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="displayFrame">CSS 색상 이름과 값</a></li>
+        <li><a href="https://dev.w3.org/html5/html-author/charref" target="displayFrame">문자 엔터티 코드</a></li>
+        <li><a href="http://www.webprogramming.co.kr" target="displayFrame">웹프로그래밍 사이트</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="iframes-box">
+    <iframe name="displayFrame" src="sitelist.html"></iframe>
+  </div>
+
+</body>
+</html>
