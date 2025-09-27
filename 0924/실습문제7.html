@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>:hover 활용</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+h3.title {
+  font-size: 24px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.card {
+  width: 120px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(0deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card-front {
+  background-color: white;
+  color: black;
+}
+
+.card-back {
+  background-image: url('file:///E:/your-back-image.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+
+h3.text {
+  font-size: 20px;
+  margin: 0;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid grey;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<h3 class="title">:hover 활용</h3>
+<hr>
+
+<div class="card-container">
+  <h3 class="text">마우스를 올리면<br>카드의 앞면이 보<br>인다.</h3>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">7♠</div>
+      <div class="card-back"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
