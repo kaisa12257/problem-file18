@@ -2,37 +2,65 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>컴퓨터 기술</title>	
+    <title>컴퓨터 기술</title>
+    <style>
+        .survey-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .copyright {
+            font-size: 0.9em;
+        }
+        img {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <audio controls autoplay>
-        <source src="녹음.mp3.m4a" type="audio/mp4">
-    </audio>
-
     <h1>빅데이터</h1>
 
-    <h2><a href="#volume">. 규모 (Volume)</a></h2>
-    <h2><a href="#variety">. 다양성 (Variety)</a></h2>
-    <h2><a href="#veracity">. 정확성 (Veracity)</a></h2>
+    <h2>목차</h2>
+    <nav>
+        <ul>
+            <li><a href="#volume">. 규모 (Volume)</a></li>
+            <li><a href="#variety">. 다양성 (Variety)</a></li>
+            <li><a href="#veracity">. 정확성 (Veracity)</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <article>
+        <h2 id="volume">
+            <a href="https://www.google.com/search?q=빅데이터+규모" target="_blank">규모 (Volume)</a>
+        </h2>
+        <p>빅데이터는 방대한 데이터 양을 다루기 때문에 전통적인 데이터 처리 기술만으로는 한계가 있습니다.</p>
+    </article>
 
-    <h2 id="volume">
-        <a href="https://www.google.com/search?q=빅데이터+규모" target="_blank">규모 (Volume)</a>
-    </h2>
-    <p>빅데이터는 방대한 데이터 양을 다루기 때문에 전통적인 데이터 처리 기술만으로는 한계가 있습니다.</p>
+    <article>
+        <h2 id="variety">
+            <a href="https://www.google.com/search?q=빅데이터+다양성" target="_blank">다양성 (Variety)</a>
+        </h2>
+        <p>빅데이터는 텍스트, 이미지, 음성, 영상, 센서 데이터 등 다양한 형태로 존재합니다.</p>
+    </article>
 
-    <h2 id="variety">
-        <a href="https://www.google.com/search?q=빅데이터+다양성" target="_blank">다양성 (Variety)</a>
-    </h2>
-    <p>빅데이터는 텍스트, 이미지, 음성, 영상, 센서 데이터 등 다양한 형태로 존재합니다.</p>
+    <article>
+        <h2 id="veracity">
+            <a href="https://www.google.com/search?q=빅데이터+정확성" target="_blank">정확성 (Veracity)</a>
+        </h2>
+        <p>데이터의 신뢰성과 정확성이 확보되어야 분석 결과가 의미를 가집니다.</p>
+    </article>
 
-    <h2 id="veracity">
-        <a href="https://www.google.com/search?q=빅데이터+정확성" target="_blank">정확성 (Veracity)</a>
-    </h2>
-    <p>데이터의 신뢰성과 정확성이 확보되어야 분석 결과가 의미를 가집니다.</p>
+    <article>
+        <img src="file:///E:/빅데이터.jpg" alt="빅데이터 이미지" width="500">
+    </article>
 
-    <!-- 맨 마지막 이미지 추가 -->
-    <img src="file:///C:/새%20폴더/46870_363_1732.jpg" alt="마지막 이미지" style="max-width:100%;">
+    <p class="survey-link" onclick="openSurvey()">설문조사</p>
+    <p class="copyright">Copyright 2025 by Google</p>
+
+    <script>
+        function openSurvey() {
+            window.open('file:///E:/과제/survey.html', '_blank', 'width=600,height=500');
+        }
+    </script>
 </body>
 </html>
