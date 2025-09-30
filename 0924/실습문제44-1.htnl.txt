@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>가보고 싶은 나라</title>
+    <style>
+        .list-box {
+            border: 2px solid aliceblue; 
+            background-color: aliceblue; 
+            background-image: url('file:///E:/World_Map_blank.jpg'); /* 절대 경로 */
+            background-size: cover;  /* 박스 전체에 맞춤 */
+            background-position: center;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 30px;
+            width: 300px; 
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+        }
+
+        li:hover {
+            background-color: yellowgreen;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>가보고 싶은 나라</h1>
+    <hr>
+    <div class="list-box">
+        <ul>
+            <li>프랑스</li>
+            <li>독일</li>
+            <li>칠레</li>
+            <li>남아프리카공화국</li>
+        </ul>
+    </div>
+</body>
+</html>

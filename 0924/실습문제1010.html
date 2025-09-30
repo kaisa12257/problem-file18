@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>애니메이션 응용</title>
+<style>
+    body {
+        font-family: "굴림", "Gulim", sans-serif;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    h1 { margin-bottom: 5px; }
+    hr { margin-top: 5px; margin-bottom: 20px; }
+
+    #animatedText {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        white-space: pre-line;
+        position: relative;
+        right: -100vw;
+        transition: right 3s ease-in-out;
+    }
+</style>
+</head>
+<body>
+<h1>애니메이션 응용</h1>
+<hr>
+
+<div id="animatedText">⯑ 질<br>문 있습<br>니다.</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedText = document.getElementById('animatedText');
+
+    setTimeout(() => {
+        animatedText.style.right = "0";
+    }, 100);
+
+    setTimeout(() => {
+        animatedText.innerHTML = '⯑ 질문 있습니다.';
+    }, 3100);
+});
+</script>
+</body>
+</html>
